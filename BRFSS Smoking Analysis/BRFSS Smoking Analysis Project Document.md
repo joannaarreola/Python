@@ -92,8 +92,10 @@ This gives context for all further charts.
 - Users can select "Age", "Education", "Income", "Race", "Region", and or "Sex" to view smoking percentages for that group individually or in comparison to another group.
 
 **Tableau Dashboard:** https://public.tableau.com/app/profile/joanna.arreola8667/viz/BRFSSSmokingBehaviorAnalysis/Dashboard1#1
+<img width="1099" height="1499" alt="Dashboard 1 (1)" src="https://github.com/user-attachments/assets/c85f3ecd-e485-4f75-8bb8-b4124bcbb39d" />
 
-Key Findings (Insights)
+
+## Key Findings 
 1. Clear socioeconomic gradient
 Smoking prevalence decreases steadily with:
 Higher income
@@ -111,20 +113,24 @@ This matches public health research and validates the analysis.
 Certain states in the Southeast have significantly higher smoking rates.
 Z-scores identify meaningful outliers rather than raw differences.
 
-Limitations
+## Limitations
 Self-reported survey data may include recall or reporting bias.
 Missing demographic values (e.g., income) were categorized as “Unknown” but excluded from rankings.
 Cross-sectional data limits causal inference.
 
-Conclusion + Next Steps
+## Conclusion + Next Steps
 This end-to-end project demonstrates:
 SQL skills for cleaning and aggregating large datasets
 Python skills for exploratory and statistical analysis
 Tableau skills for interactive data storytelling
 The resulting dashboard provides an accessible visual summary of U.S. smoking patterns, offering valuable insights for public health decisions or demographic research.
 
-Links
-Tableau Dashboard: (insert link)
-GitHub Folder (All Code + Workbook): (insert link)
-SQL Script: (insert link)
-Python Notebook: (insert link)
+## Links
+Cleaned Dataset:
+Raw Dataset: https://www.kaggle.com/datasets/isuruprabath/brfss-2023-csv-dataset?resource=download
+Python Notebook: https://github.com/joannaarreola/Python/blob/main/BRFSS%20Smoking%20Analysis/BRFSS%20Smoking%20Behavior%20Analysis%20-%20Python.ipynb
+SQL Queries: 
+Tableau Dashboard: https://public.tableau.com/app/profile/joanna.arreola8667/viz/BRFSSSmokingBehaviorAnalysis/Dashboard1#1
+GitHub Project Folder:
+
+
