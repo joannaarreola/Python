@@ -54,15 +54,19 @@ To understand patterns and disparities in smoking behavior across the U.S. and h
 
 **Full Python notebook:** https://github.com/joannaarreola/Python/blob/main/BRFSS%20Smoking%20Analysis/BRFSS%20Smoking%20Behavior%20Analysis%20-%20Python.ipynb
 
-## SQL Analysis
-SQL was used for:
-Validate Python visualizations numerically
-Filtering valid smoking responses
-Standardizing demographic categories
-Aggregating smokers vs. total respondents
-Creating summary tables (e.g., smokers by sex, age, race, region)
-Ranking demographic groups by smoking prevalence
-Full SQL code: (link to your GitHub file)
+## SQL Workflow Summary
+- Created a relational database and a table using the cleaned dataset exported from Python
+- Loaded the data and verified integrity to ensure accurate downstream analysis
+- Performed exploratory data checks, including:
+  - Counting unknown or missing values per demographic category
+  - Examining value distributions for each demographic variable
+- Conducted analytical queries to validate Python findings:
+  - Calculated the percentage of each smoking status across demographic categories
+  - Examined combined education × income patterns
+- Ranked demographic groups to identify the top 5 highest-risk populations for current smoking
+- Quantified income and education gradients in relation to combined current smoking rates
+
+**Full SQL queries:** 
 
 ## Tableau dashboard
 Components included:
