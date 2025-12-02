@@ -70,23 +70,28 @@ To understand patterns and disparities in smoking behavior across the U.S. and h
 
 ## Tableau dashboard
 Components included:
-1. U.S. Map: Smoking Prevalence by State
-A filled map showing smoking % by state to quickly spot geographic patterns.
-2. Z-Score Table (State Outliers)
-Highlights states with unusually high or low rates compared to the national average.
-3. Socioeconomic Heatmap: Income × Education
-Shows a clear gradient: smoking prevalence decreases as income and education increase.
-4. Top 5 Highest-Risk Demographics
-Uses the pivoted demographic fields and smoking percentages to reveal the groups with the highest prevalence.
-5. Interactive Demographic Breakdown
-Users can select "Sex", "Race", "Age", "Region", or "Income" to view smoking percentages for that group individually.
-6. Smoking Status Breakdown (Total Population)
-A simple table summarizing:
-Never smoked
-Former smoker
-Current smoker (every day + some days)
+
+**Smoking Status Breakdown (Total Population)**
+- A simple table summarizing smoking status for all survey respondents
+
 This gives context for all further charts.
-Tableau Dashboard (Image + Link)
+
+**U.S. Map: Smoking Prevalence by State**
+ - A filled map showing smoking % by state to quickly spot geographic patterns
+   
+**Z-Score Table**
+- Highlights state current smoking rates compared to the national average
+  
+**Socioeconomic Heatmap: Income × Education**
+- Shows a clear gradient: smoking prevalence decreases as income and education increase
+  
+**Top 5 High Risk Demographics**
+- A table of the top 5 demographics that reflect high risk for current smoking
+  
+**Interactive Demographic Breakdown**
+- Users can select "Age", "Education", "Income", "Race", "Region", and or "Sex" to view smoking percentages for that group individually or in comparison to another group.
+
+**Tableau Dashboard:** https://public.tableau.com/app/profile/joanna.arreola8667/viz/BRFSSSmokingBehaviorAnalysis/Dashboard1#1
 
 Key Findings (Insights)
 1. Clear socioeconomic gradient
