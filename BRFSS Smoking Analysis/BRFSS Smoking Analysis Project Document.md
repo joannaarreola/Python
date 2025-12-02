@@ -52,7 +52,7 @@ To understand patterns and disparities in smoking behavior across the U.S. and h
   - Multivariate patterns (e.g. income × education interactions)
 - Extracted preliminary insights to guide the SQL queries and Tableau dashboard design
 
-(link)
+**Full Python notebook:** https://github.com/joannaarreola/Python/blob/main/BRFSS%20Smoking%20Analysis/BRFSS%20Smoking%20Behavior%20Analysis%20-%20Python.ipynb
 
 ## SQL Analysis
 SQL was used for:
