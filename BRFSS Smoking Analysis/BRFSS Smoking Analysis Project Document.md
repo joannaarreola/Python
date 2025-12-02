@@ -136,6 +136,6 @@ The resulting dashboard provides an accessible visual summary of U.S. smoking pa
 
 **Tableau Dashboard:** https://public.tableau.com/app/profile/joanna.arreola8667/viz/BRFSSSmokingBehaviorAnalysis/Dashboard1#1
 
-**GitHub Project Folder:**
+**GitHub Project Folder:** https://github.com/joannaarreola/Python/tree/main/BRFSS%20Smoking%20Analysis
 
 
