@@ -126,11 +126,16 @@ Tableau skills for interactive data storytelling
 The resulting dashboard provides an accessible visual summary of U.S. smoking patterns, offering valuable insights for public health decisions or demographic research.
 
 ## Links
-Cleaned Dataset:
-Raw Dataset: https://www.kaggle.com/datasets/isuruprabath/brfss-2023-csv-dataset?resource=download
-Python Notebook: https://github.com/joannaarreola/Python/blob/main/BRFSS%20Smoking%20Analysis/BRFSS%20Smoking%20Behavior%20Analysis%20-%20Python.ipynb
-SQL Queries: 
-Tableau Dashboard: https://public.tableau.com/app/profile/joanna.arreola8667/viz/BRFSSSmokingBehaviorAnalysis/Dashboard1#1
-GitHub Project Folder:
+**Cleaned Dataset:** https://github.com/joannaarreola/Python/blob/main/BRFSS%20Smoking%20Analysis/cleaned_brfss2023.csv.zip
+
+**Raw Dataset:** https://www.kaggle.com/datasets/isuruprabath/brfss-2023-csv-dataset?resource=download
+
+**Python Notebook:** https://github.com/joannaarreola/Python/blob/main/BRFSS%20Smoking%20Analysis/BRFSS%20Smoking%20Behavior%20Analysis%20-%20Python.ipynb
+
+**SQL Queries:** 
+
+**Tableau Dashboard:** https://public.tableau.com/app/profile/joanna.arreola8667/viz/BRFSSSmokingBehaviorAnalysis/Dashboard1#1
+
+**GitHub Project Folder:**
 
 
