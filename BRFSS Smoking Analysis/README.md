@@ -66,7 +66,7 @@ To understand patterns and disparities in smoking behavior across the U.S. and h
 - Ranked demographic groups to identify the top 5 highest-risk populations for current smoking
 - Quantified income and education gradients in relation to combined current smoking rates
 
-**Full SQL queries:** 
+**Full SQL queries:** https://github.com/joannaarreola/SQL/tree/main/BRFSS%20Smoking%20Behavior%20Analyis%20Project
 
 ## Tableau Dashboard
 Components included:
@@ -163,7 +163,7 @@ This smoking analysis highlights clear disparities in smoking prevalence across 
 
 **Python Notebook:** https://github.com/joannaarreola/Python/blob/main/BRFSS%20Smoking%20Analysis/BRFSS%20Smoking%20Behavior%20Analysis%20-%20Python.ipynb
 
-**SQL Queries:** 
+**SQL Queries:** https://github.com/joannaarreola/SQL/tree/main/BRFSS%20Smoking%20Behavior%20Analyis%20Project
 
 **Tableau Dashboard:** https://public.tableau.com/app/profile/joanna.arreola8667/viz/BRFSSSmokingBehaviorAnalysis/Dashboard1#1
 
