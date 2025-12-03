@@ -3,13 +3,13 @@
 ## Overview
 This project analyzes smoking behavior among U.S. adults using the 2023 BRFSS dataset, combining SQL, Python, and Tableau to understand demographic patterns, socioeconomic disparities, and state-level differences in smoking prevalence. The goal is to demonstrate a full-stack analytical workflow from raw data preparation to interactive visualization.
 
-Across tools, the project includes:
+This project integrates:
 
-**Python:** detailed data cleaning, creation of export-ready datasets for SQL and Tableau, and visualization
+**Python:** for detailed data cleaning, creation of export-ready datasets for SQL and Tableau, and visualization
 
-**SQL:** querying, filtering, and summarizing the BRFSS data subset 
+**SQL:** for querying, filtering, and summarizing the BRFSS data subset 
 
-**Tableau:** interactive dashboards highlighting state-level smoking z-scores, income × education effects, and demographic risk patterns
+**Tableau:** for interactive dashboards highlighting state-level smoking z-scores, income × education effects, and demographic risk patterns
 
 The final product is a Tableau dashboard, giving a clear view of where smoking disparities are most pronounced and which population groups are at higher risk. 
 
@@ -18,7 +18,7 @@ The analysis uses the 2023 Behavioral Risk Factor Surveillance System (BRFSS) da
 
 **Source:** BRFSS (Behavioral Risk Factor Surveillance System) - https://www.kaggle.com/datasets/isuruprabath/brfss-2023-csv-dataset?resource=download 
 
-*sample extracted for project use
+*Sample extracted for project use*
 
 **Size:** 410187 rows 
 
@@ -32,7 +32,7 @@ The analysis uses the 2023 Behavioral Risk Factor Surveillance System (BRFSS) da
 - `_educag`: Categorical Edcucation level completed
 - `_racegr3`: Five level race/ethnicity category
 
-## Project Goals
+## Project Objectives
 To understand patterns and disparities in smoking behavior across the U.S. and highlight high-risk populations:
 
 - Analyze smoking prevalence across demographic and socioeconomic groups
@@ -44,7 +44,7 @@ To understand patterns and disparities in smoking behavior across the U.S. and h
 
 - Loaded and inspected the dataset to understand structure, data types, and missing values
 - Selected relevant columns and cleaned the data by standardizing formats, handling missing values, and correcting any inconsistencies
-- Engineered new variables needed for deeper analysis
+- Engineered new "Region" variable for aggregate geographical analysis
 - Exported a cleaned version of the dataset for use in SQL and Tableau
 - Conducted exploratory analysis using visualizations showing:
   - Overall smoking status
@@ -60,7 +60,7 @@ To understand patterns and disparities in smoking behavior across the U.S. and h
 - Performed exploratory data checks, including:
   - Counting unknown or missing values per demographic category
   - Examining value distributions for each demographic variable
-- Conducted analytical queries to validate Python findings:
+- Conducted analytical queries to validate Python findings numerically:
   - Calculated the percentage of each smoking status across demographic categories
   - Examined combined education × income patterns
 - Ranked demographic groups to identify the top 5 highest-risk populations for current smoking
@@ -68,19 +68,19 @@ To understand patterns and disparities in smoking behavior across the U.S. and h
 
 **Full SQL queries:** 
 
-## Tableau dashboard
+## Tableau Dashboard
 Components included:
 
 **Smoking Status Breakdown (Total Population)**
 - A simple table summarizing smoking status for all survey respondents
 
-This gives context for all further charts.
+This gives context for all further charts
 
 **U.S. Map: Smoking Prevalence by State**
  - A filled map showing smoking % by state to quickly spot geographic patterns
    
 **Z-Score Table**
-- Highlights state current smoking rates compared to the national average
+- Highlights states with unusually high or low smoking rates relative to the national average
   
 **Socioeconomic Heatmap: Income × Education**
 - Shows a clear gradient: smoking prevalence decreases as income and education increase
@@ -89,19 +89,20 @@ This gives context for all further charts.
 - A table of the top 5 demographics that reflect high risk for current smoking
   
 **Interactive Demographic Breakdown**
-- Users can select "Age", "Education", "Income", "Race", "Region", and or "Sex" to view smoking percentages for that group individually or in comparison to another group.
+- Users can select "Age", "Education", "Income", "Race", "Region", and/or "Sex" to view smoking percentages for that group individually or in comparison to another group.
 
 **Tableau Dashboard:** https://public.tableau.com/app/profile/joanna.arreola8667/viz/BRFSSSmokingBehaviorAnalysis/Dashboard1#1
-<img width="1099" height="1499" alt="Dashboard 1 (2)" src="https://github.com/user-attachments/assets/b5d74204-d5fd-4536-8f8b-506ac4b8ba9d" />
+<img width="1099" height="1499" alt="Dashboard 1 (3)" src="https://github.com/user-attachments/assets/61013b79-9f66-457e-8884-bad94e21c4b3" />
+
 
 ## Key Findings 
 **Overall Smoking Status**
 - A majority of respondents (61.4%) have never smoked
-- Former smokers represent 27.6% of the sample
+- Former smokers represent the second largest category of the sample (27.6%)
 - Among current smokers (11%), everyday smoking (7.7%) is more common than someday smoking (3.3%)
 
 **Geographic Patterns**
-- The Virgin Islands, Utah, District of Columbia, and Puerto Rico, and Utah have the lowest rates of current smoking
+- The Virgin Islands, Utah, District of Columbia, and Puerto Rico have the lowest rates of current smoking
 - West Virginia, Guam, and Tennessee show the highest rates of current smoking
 - The South and Midwest show slightly higher smoking rates than other U.S. regions
 
@@ -146,18 +147,14 @@ This gives context for all further charts.
   5. Income: $25,000–<$35,000
 - These groups represent the most vulnerable populations for smoking risk based on this dataset.
 
-
 ## Limitations
-- Self-reported survey data may include recall or reporting bias.
-- Missing demographic values (e.g., income) were categorized as “Unknown” but excluded from rankings.
-- Cross-sectional data limits causal inference.
+- Self-reported survey data may include recall or reporting bias
+- The cross-sectional nature of the data limits our ability to draw causal conclusions. Results reflect correlations, not causation
+- Missing demographic values were categorized as “Unknown” but excluded from rankings and visualizations
 
 ## Conclusion + Next Steps
-This end-to-end project demonstrates:
-SQL skills for cleaning and aggregating large datasets
-Python skills for exploratory and statistical analysis
-Tableau skills for interactive data storytelling
-The resulting dashboard provides an accessible visual summary of U.S. smoking patterns, offering valuable insights for public health decisions or demographic research.
+
+This smoking analysis highlights clear disparities in smoking prevalence across socioeconomic and geographic groups. While causation cannot be established due to the cross-sectional nature of the data, these associations offer valuable insights for public health decisions or demographic research and suggest that public health interventions could be targeted to the most at-risk populations. Future research with longitudinal data could clarify causal pathways and help refine these interventions.
 
 ## Links
 **Cleaned Dataset:** https://github.com/joannaarreola/Python/blob/main/BRFSS%20Smoking%20Analysis/cleaned_brfss2023.csv.zip
