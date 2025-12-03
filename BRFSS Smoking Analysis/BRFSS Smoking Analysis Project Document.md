@@ -18,7 +18,7 @@ The analysis uses the 2023 Behavioral Risk Factor Surveillance System (BRFSS) da
 
 **Source:** BRFSS (Behavioral Risk Factor Surveillance System) - https://www.kaggle.com/datasets/isuruprabath/brfss-2023-csv-dataset?resource=download 
 
-*sample extracted for project use.
+*sample extracted for project use
 
 **Size:** 410187 rows 
 
@@ -26,7 +26,7 @@ The analysis uses the 2023 Behavioral Risk Factor Surveillance System (BRFSS) da
 
 - `_smoker3`: Smoking status (Current smoker – every day, Current smoker – some days, Former smoker, Never smoked)
 - `_state`: Respondent’s state.
-- `sexvar`: Identifier for sex (male/female).
+- `sexvar`: Identifier for sex (male/female)
 - `_ageg5yr`: Categorical age variable, with ages in 5 year bins
 - `_incomg1`: Categorical Income classification
 - `_educag`: Categorical Edcucation level completed
@@ -92,31 +92,65 @@ This gives context for all further charts.
 - Users can select "Age", "Education", "Income", "Race", "Region", and or "Sex" to view smoking percentages for that group individually or in comparison to another group.
 
 **Tableau Dashboard:** https://public.tableau.com/app/profile/joanna.arreola8667/viz/BRFSSSmokingBehaviorAnalysis/Dashboard1#1
-<img width="1099" height="1499" alt="Dashboard 1 (1)" src="https://github.com/user-attachments/assets/c85f3ecd-e485-4f75-8bb8-b4124bcbb39d" />
-
+<img width="1099" height="1499" alt="Dashboard 1 (2)" src="https://github.com/user-attachments/assets/b5d74204-d5fd-4536-8f8b-506ac4b8ba9d" />
 
 ## Key Findings 
-1. Clear socioeconomic gradient
-Smoking prevalence decreases steadily with:
-Higher income
-Higher educational attainment
-Income × Education interaction shows the strongest effect of any demographic variable.
+**Overall Smoking Status**
+- A majority of respondents (61.4%) have never smoked
+- Former smokers represent 27.6% of the sample
+- Among current smokers (11%), everyday smoking (7.7%) is more common than someday smoking (3.3%)
 
-2. Demographics with highest smoking prevalence
-Across all categories, the groups appearing most frequently in the “Top 5” include:
-Lower income brackets
-Lower education levels
-Certain age groups (e.g., 25–44 depending on the year)
-This matches public health research and validates the analysis.
+**Geographic Patterns**
+- The Virgin Islands, Utah, District of Columbia, and Puerto Rico, and Utah have the lowest rates of current smoking
+- West Virginia, Guam, and Tennessee show the highest rates of current smoking
+- The South and Midwest show slightly higher smoking rates than other U.S. regions
 
-3. Regional differences
-Certain states in the Southeast have significantly higher smoking rates.
-Z-scores identify meaningful outliers rather than raw differences.
+**Education Gradient**
+- Smoking rates are highest among individuals who did not graduate high school and lowest among college/technical school graduates
+- The proportion of “never smoked” rises steadily with education level.
+- SQL analysis shows the largest drop in smoking occurs between:
+  - Attended College/Technical School → Graduated College/Technical School
+
+**Income Gradient**
+- Higher income levels are associated with:
+  - more “never smoked” respondents
+  - fewer current smokers
+- The steepest decrease in smoking occurs between:
+  - <$15,000 → $15,000–<$25,000
+- Middle income groups show a steady, gradual decline
+
+**Education × Income Interaction**
+- Among those with very low income, education has a weaker effect on smoking rates 
+- For individuals with middle to high incomes, education has a much stronger effect: smoking drops substantially as both income and education rise
+- The highest smoking rates overall appear among adults with low income + low education, while the lowest rates appear among those with high income + higher education
+
+**Age Trends**
+- Current smoking follows a bell-shaped pattern, peaking around ages 40–60
+- The share of “never smoked” declines up to the 40s and levels off afterward
+
+**Race/Ethnicity Patterns**
+- Hispanic respondents have the lowest rates of current smoking
+- Multiracial Non-Hispanic respondents have the highest rates of current smoking
+- “Never smoked” percentages are highest among Hispanic and Black Non-Hispanic adults
+
+**Gender Patterns**
+- Females have higher rates of never smoking
+- Males have slightly higher rates of current smokers
+
+**Highest-Risk Demographic Groups (SQL Ranking)**
+- Top 5 groups with the highest current smoking prevalence:
+  1. Income: <$15,000
+  2. Education: Did Not Graduate High School
+  3. Income: $15,000–<$25,000
+  4. Race: Multiracial, Non-Hispanic
+  5. Income: $25,000–<$35,000
+- These groups represent the most vulnerable populations for smoking risk based on this dataset.
+
 
 ## Limitations
-Self-reported survey data may include recall or reporting bias.
-Missing demographic values (e.g., income) were categorized as “Unknown” but excluded from rankings.
-Cross-sectional data limits causal inference.
+- Self-reported survey data may include recall or reporting bias.
+- Missing demographic values (e.g., income) were categorized as “Unknown” but excluded from rankings.
+- Cross-sectional data limits causal inference.
 
 ## Conclusion + Next Steps
 This end-to-end project demonstrates:
