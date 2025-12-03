@@ -1,31 +1,31 @@
 # BRFSS Smoking Behavior Analysis: End-to-End Data Project
 
 ## Overview
-This project analyzes smoking behavior among U.S. adults using the 2023 BRFSS dataset, combining SQL, Python, and Tableau to understand demographic patterns, socioeconomic disparities, and state-level differences in smoking prevalence. The goal is to demonstrate a full-stack analytical workflow from raw data preparation to interactive visualization.
+This project analyzes smoking behavior among U.S. adults using the 2023 BRFSS dataset. It utilizes SQL, Python, and Tableau to understand demographic patterns, socioeconomic disparities, and state-level differences in smoking prevalence. The goal is to demonstrate an analytical workflow from raw data preparation to interactive visualization.
 
 This project integrates:
 
-**Python:** for detailed data cleaning, creation of export-ready datasets for SQL and Tableau, and visualization
+**Python:** for data cleaning, creation of export-ready datasets for SQL and Tableau, and visualization
 
-**SQL:** for querying, filtering, and summarizing the BRFSS data subset 
+**SQL:** for querying, filtering, summarizing the BRFSS data subset, validating Python findings 
 
 **Tableau:** for interactive dashboards highlighting state-level smoking z-scores, income × education effects, and demographic risk patterns
 
 The final product is a Tableau dashboard, giving a clear view of where smoking disparities are most pronounced and which population groups are at higher risk. 
 
 ## Dataset Description
-The analysis uses the 2023 Behavioral Risk Factor Surveillance System (BRFSS) dataset, a nationally representative U.S. health survey with over 400,000 adult respondents. The raw dataset includes demographic, socioeconomic, and health behavior variables. For this project, the focus was on smoking-related variables along with key demographics such as income, education, age, sex, race, and state. After cleaning and standardizing categories, the dataset was used to examine population-level smoking patterns and state-level disparities.
+The analysis uses the 2023 Behavioral Risk Factor Surveillance System (BRFSS) dataset, a nationally representative U.S. health survey with over 400,000 survey responses. The raw dataset includes demographic, socioeconomic, and health behavior variables. For this project, the focus was on smoking-related variables and key demographics such as income, education, age, sex, race, and state. After cleaning and standardizing categories, the dataset was used to examine how smoking patterns varied by different variables.
 
 **Source:** BRFSS (Behavioral Risk Factor Surveillance System) - https://www.kaggle.com/datasets/isuruprabath/brfss-2023-csv-dataset?resource=download 
 
 *Sample extracted for project use*
 
-**Size:** 410187 rows 
+**Size:** 410187 rows (sample)
 
 **Key Variables Used:**
 
 - `_smoker3`: Smoking status (Current smoker – every day, Current smoker – some days, Former smoker, Never smoked)
-- `_state`: Respondent’s state.
+- `_state`: Respondent’s state
 - `sexvar`: Identifier for sex (male/female)
 - `_ageg5yr`: Categorical age variable, with ages in 5 year bins
 - `_incomg1`: Categorical Income classification
